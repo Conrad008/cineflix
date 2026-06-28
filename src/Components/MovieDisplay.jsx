@@ -49,8 +49,10 @@ const MovieDisplay = ({ onAddMovie }) => {
         className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm"
         />
 
-
-
+        <button type="submit"
+        className="p-2 bg-emerald-500 text-white font-bold rounded-md hover:bg-emerald-600 transition-colors shadow-sm text-sm">
+            Add to Watchlist
+        </button>
     </form>
   )
 }
