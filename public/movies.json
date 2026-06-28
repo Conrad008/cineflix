@@ -1,0 +1,94 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "Title": "Inception",
+      "Runtime": "Sci-Fi / 148 min",
+      "Year": 2010
+    },
+    {
+      "id": 2,
+      "Title": "The Dark Knight",
+      "Runtime": "Action / 152 min",
+      "Year": 2008
+    },
+    {
+      "id": 3,
+      "Title": "Interstellar",
+      "Runtime": "Sci-Fi / 169 min",
+      "Year": 2014
+    },
+    {
+      "id": 4,
+      "Title": "Pulp Fiction",
+      "Runtime": "Crime / 154 min",
+      "Year": 1994
+    },
+    {
+      "id": 5,
+      "Title": "The Godfather",
+      "Runtime": "Crime / 175 min",
+      "Year": 1972
+    },
+    {
+      "id": 6,
+      "Title": "The Matrix",
+      "Runtime": "Sci-Fi / 136 min",
+      "Year": 1999
+    },
+    {
+      "id": 7,
+      "Title": "The Lord of the Rings: The Fellowship of the Ring",
+      "Runtime": "Fantasy / 178 min",
+      "Year": 2001
+    },
+    {
+      "id": 8,
+      "Title": "Schindler's List",
+      "Runtime": "Biography / 195 min",
+      "Year": 1993
+    },
+    {
+      "id": 9,
+      "Title": "Fight Club",
+      "Runtime": "Drama / 139 min",
+      "Year": 1999
+    },
+    {
+      "id": 10,
+      "Title": "Forrest Gump",
+      "Runtime": "Drama / 142 min",
+      "Year": 1994
+    },
+    {
+      "id": 11,
+      "Title": "Spirited Away",
+      "Runtime": "Animation / 125 min",
+      "Year": 2001
+    },
+    {
+      "id": 12,
+      "Title": "Parasite",
+      "Runtime": "Thriller / 132 min",
+      "Year": 2019
+    },
+    {
+      "id": 13,
+      "Title": "Gladiator",
+      "Runtime": "Action / 155 min",
+      "Year": 2000
+    },
+    {
+      "id": 14,
+      "Title": "Whiplash",
+      "Runtime": "Drama / 106 min",
+      "Year": 2014
+    },
+    {
+      "id": 15,
+      "Title": "The Prestige",
+      "Runtime": "Mystery / 130 min",
+      "Year": 2006
+    }
+  ]
+}
