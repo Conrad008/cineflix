@@ -22,7 +22,34 @@ const MovieDisplay = ({ onAddMovie }) => {
         };
 
   return (
-    <form>
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3 mb-6 bg-gray-50 p-4 rounded-lg border border-gray-200">
+        <h2 className="text-sm font-bold text-gray-700 uppercase tracking-wide">
+            Add New Movie
+        </h2>
+        <input type="text" 
+        placeholder="Movie Title"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm"
+        />
+
+        <input 
+        type="text" 
+        placeholder="Genre" 
+        value={genre} 
+        onChange={(e) => setGenre(e.target.value)} 
+        className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm"
+        />
+
+        <input 
+        type="number" 
+        placeholder="Release Year" 
+        value={year} 
+        onChange={(e) => setYear(e.target.value)} 
+        className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm"
+        />
+
+
 
     </form>
   )
