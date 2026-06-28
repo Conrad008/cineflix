@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import MovieList from './components/MovieList';
-import MovieDisplay from './Components/MovieDisplay';
+
 
 function App () {
   const [movies, setMovies] = useState([]);
@@ -13,7 +13,7 @@ function App () {
       try {
         setLoading(true);
         
-        const response = await fetch('/public/movies.json');
+        const response = await fetch('/movies.json');
         
         if (!response.ok) {
           throw new Error('Failed to find the movie.');
@@ -47,10 +47,11 @@ function App () {
     setMovies(movies.filter(movie => movie.id !== id));
   };
 
-  const filteredMovies = movies.filter(movie =>
-    movie.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    movie.genre.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredMovies = movies.filter(movie => {
+  const titleMatch = movie && movie.title ? movie.title.toLowerCase().includes(searchTerm.toLowerCase()) : false;
+  const genreMatch = movie && movie.genre ? movie.genre.toLowerCase().includes(searchTerm.toLowerCase()) : false;
+  return titleMatch || genreMatch;
+  });
 
   return (
     <div className='min-h-screen bg-slate-100 py-10 px-4'>
@@ -66,7 +67,7 @@ function App () {
         </header>
 
         <main>
-          <MovieDisplay onAddMovie={handleAddMovie}/>
+
 
           <div className="mb-6">
             <input 
