@@ -12,6 +12,11 @@ const MovieCard = ({movie, onDelete}) => {
                 <span className='font-medium text-gray-700'>Year:</span> {movie.year}
             </p>
         </div>
+        <button className='px-3 py-1.5 bg-red-500 text-white text-sm font-medium rounded-md hover:bg-red-600 transition-colors focus:outline-none focus:ring-2 focus:ring-red-400'
+        onClick={() => onDelete(movie.id)}
+        >
+            Remove
+        </button>
       
     </div>
   )
