@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import MovieList from './components/MovieList';
+import MovieList from './Components/MovieList';
 
 
 function App () {
