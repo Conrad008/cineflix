@@ -39,9 +39,7 @@ function App () {
     fetchData();
   },[]);
 
-  const handleAddMovie = (newMovie) => {
-    setMovies([newMovie, ...movies]);
-  };
+
 
   const handleDeleteMovie = (id) => {
     setMovies(movies.filter(movie => movie.id !== id));
